@@ -1,0 +1,5 @@
+IpAddress = $LUCENE_HOST
+Port = $LUCENE_PORT
+IndexPath = /var/www/ilias/data
+LogFile = /var/www/ilias/data/indexer.log
+

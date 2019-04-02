@@ -1,0 +1,15 @@
+[Server]
+IpAddress = $LUCENE_HOST
+Port = $LUCENE_PORT
+IndexPath = /var/www/ilias/data
+LogFile = /var/log/lucene/indexer.log
+LogLevel = $LUCENE_LOG_LEVEL
+NumThreads = $LUCENE_NUM_THREADS
+RamBufferSize = $LUCENE_RAM_BUFFER_SIZE
+IndexMaxFileSizeMB = $LUCENE_INDEX_MAX_FILE_SIZE
+
+[Client1]
+ClientId = $LUCENE_CLIENT_ID
+NicId = $LUCENE_NIC_ID
+IliasIniPath = /var/www/ilias/ilias.ini.php
+

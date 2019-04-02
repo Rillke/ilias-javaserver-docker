@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+echo "Custom post-checkout script: ILIAS Java Server"
+pwd
+
+rsync -a --prune-empty-dirs \
+	--include '*/' \
+	--include '*/Lucene*.xml' \
+	--include 'Services/WebServices/RPC/lib/*' \
+	--exclude '*' \
+	assets/ILIAS/ assets/ilias-lucene
+
+# Mount your plugin dir over this one
+mkdir -p assets/ilias-lucene/Customizing/global
+
