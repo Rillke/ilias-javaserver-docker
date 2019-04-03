@@ -1,6 +1,6 @@
 [Server]
-IpAddress = $LUCENE_HOST
-Port = $LUCENE_PORT
+IpAddress = 0.0.0.0
+Port = 11111
 IndexPath = /var/www/ilias/data
 LogFile = /var/log/lucene/indexer.log
 LogLevel = $LUCENE_LOG_LEVEL

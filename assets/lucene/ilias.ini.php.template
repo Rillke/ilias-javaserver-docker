@@ -1,0 +1,14 @@
+; <?php exit; ?>
+[server]
+http_path = "${ILIAS_HTTP_PATH}"
+absolute_path = "/var/www/ilias"
+presetting = ""
+timezone = "${TZ}"
+
+[clients]
+path = "data"
+inifile = "client.ini.php"
+datadir = "/var/ilias/private_data"
+default = "${ILIAS_CLIENT_NAME}"
+list = "0"
+
